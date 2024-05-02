@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Options : MonoBehaviour
 {
@@ -36,5 +37,14 @@ public class Options : MonoBehaviour
         opt.SetActive(false);
 
     }
+    public void play()
+    {
 
+        SceneManager.LoadScene("Play");
+
+
+    }
+    
+        
+    
 }
