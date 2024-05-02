@@ -23,10 +23,10 @@ public class Player : MonoBehaviour
     {
 
         horizontal = Input.GetAxisRaw("Horizontal");
-        body.velocity = new Vector3(body.velocity.x, 0, speed * horizontal);
+        body.velocity = new Vector3(speed * horizontal, 0, body.velocity.z);
 
         vertical = Input.GetAxisRaw("Vertical");
-        body.velocity = new Vector3(speed * vertical, 0, body.velocity.z);
+        body.velocity = new Vector3(body.velocity.x, 0, speed * vertical);
 
       
 
