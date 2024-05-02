@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Options : MonoBehaviour
 {
+
+
+    public GameObject canva;
+    public GameObject opt;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +19,22 @@ public class Options : MonoBehaviour
     {
         
     }
+    public void opt1()
+    {
+
+        canva.SetActive(false);
+        opt.SetActive(true);
+
+
+
+    }
+    public void opt2()
+    {
+
+
+        canva.SetActive(true);
+        opt.SetActive(false);
+
+    }
+
 }
