@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         body.velocity = new Vector3(body.velocity.x, 0, speed * vertical);
 
       
-
+        if(Input)
 
     }
 }
